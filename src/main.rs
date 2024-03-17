@@ -1,11 +1,13 @@
 use std::io;
 
 fn main() {
-    let mut celcius = String::new();
+
 
     loop  {
         println!("Please enter celsius to calculate Fahrenheit: ");
         println!("Or type 'exit' to end.");
+
+        let mut celcius = String::new();
 
         //takes user input
         io::stdin()
@@ -25,8 +27,6 @@ fn main() {
         let converted_value = (celcius * 1.8) + 32.0;
 
         println!("{celcius} converted to Fahrenheit is: {converted_value}");
-
-        celcius.clear(); //Clear the input for the next iteration of the loop
 
     }
 }
